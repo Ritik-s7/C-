@@ -1,0 +1,1 @@
+{"name":"Local: Subarray_with_given_sum","url":"c:\\Users\\LENOVO\\Desktop\\C++\\Subarray_with_given_sum.cpp","tests":[{"id":1620209824834,"input":"5 5\n1 2 3 4 5\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\LENOVO\\Desktop\\C++\\Subarray_with_given_sum.cpp","group":"local","local":true}
