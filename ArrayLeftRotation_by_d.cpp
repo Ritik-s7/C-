@@ -37,7 +37,7 @@ int main()
     //  {5,4,6,8,9,2,11};
     int d1 = d;
     int n1 = n;
-
+    // Reverse first d elements
     for (int i = 0; i < d; i++)
     {
         int temp = arr[i];
@@ -46,7 +46,7 @@ int main()
         d--;
         
     }
-
+    // Reverse next n-d elements
     d=d1;
     //  {4,5,6,8,9,2,11};
      for (int i = d; i < n; i++)
@@ -57,6 +57,7 @@ int main()
         n--;
     }
     n=n1;
+    // Reverse whole array
     // {4,5,11,2,9,8,6};
     for (int i = 0; i < n; i++)
     {
