@@ -4,15 +4,12 @@ using namespace std;
 
 int kadane(int arr[], int n)
 {
-    int currentsum = 0;
-    int maxSum = INT_MIN;
-    for (int i = 0; i <n; i++)
+    int currentsum = arr[0];
+    int maxSum = arr[0];
+    for (int i = 1; i <n; i++)
     {
-        currentsum += arr[i];
-        if (currentsum < 0)
-        {
-            currentsum = 0;
-        }
+        currentsum = max(currentsum+arr[i], arr[i]);
+  
         maxSum = max(maxSum,currentsum);
     }
     return maxSum;
@@ -34,7 +31,17 @@ int main()
     int wrapSum;
     int nonWrapSum;
 
+
     nonWrapSum = kadane(arr,n);
+
+    if (nonWrapSum < 0)
+    {
+   
+        cout << nonWrapSum;
+        return 0;
+
+    }
+    
     int totalsum = 0;
     for (int i = 0; i < n; i++)
     {
@@ -44,7 +51,7 @@ int main()
 
     wrapSum = totalsum + kadane(arr,n);
     
-    cout << max(wrapSum,nonWrapSum) << endl;
+    cout << max(wrapSum,nonWrapSum) << endl; 
 
 return 0;
 
