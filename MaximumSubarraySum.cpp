@@ -2,6 +2,21 @@
 #include<climits>
 using namespace std;
 
+
+int maxSubarraySum(int arr[], int n)
+{
+    int currsum = arr[0];
+    int maxsum = arr[0];
+    for (int i = 1; i < n; i++)
+    {
+        currsum = max((currsum+arr[i]),arr[i]);
+        maxsum = max(currsum,maxsum);
+
+    }
+    return maxsum;
+    
+}
+
 int main()
 {
 
@@ -35,6 +50,9 @@ int main()
     }
 
     cout << maxSum << endl;
+
+    cout <<"Solution by function :\n";
+    cout << maxSubarraySum(arr,n);
     
     
 
