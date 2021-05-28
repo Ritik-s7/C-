@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+// does not work with negative elements
+// Works with non-negative elements only
 
 int main(){
     int n, s;
@@ -24,10 +26,9 @@ int main(){
 
     if (sum == s)
     {
-         cout<<i+1<<j<<endl;
+         cout<<i+1<<" "<<j<<endl;
         return 0;
     }
-
     while (j<n)
     {
          sum += array[j];
