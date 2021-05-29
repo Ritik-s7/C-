@@ -78,6 +78,11 @@ void insertionSort(int arr[], int n){
                 int temp = arr[current];
                 arr[current] = arr[i];
                 arr[i]=temp;
+                for (int j = 0; j < n; j++)
+                {
+                    cout<<arr[j]<< " ";
+                }
+                cout <<""<<endl;
             }
     
         }
@@ -124,7 +129,7 @@ int main(){
     {
         cin>>array[i];
     }
-insertionSort2(array,n);
+insertionSort(array,n);
  
     
 }
