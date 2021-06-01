@@ -1,0 +1,1 @@
+{"name":"Local: WaveArray","url":"c:\\Users\\LENOVO\\Desktop\\C++\\WaveArray.cpp","tests":[{"id":1622450962532,"input":"","output":""},{"id":1622450987220,"input":"6\n2 4 7 8 9 10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\LENOVO\\Desktop\\C++\\WaveArray.cpp","group":"local","local":true}
